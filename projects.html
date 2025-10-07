@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - K. Karathanasis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-gray-900 shadow-md z-50 border-b border-gray-700">
+      <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <div class="text-2xl font-bold">
+          <a href="index.html" class="hover:text-blue-400">K. Karathanasis</a>
+        </div>
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-6">
+          <a href="about.html" class="hover:text-blue-400">About</a>
+          <a href="experience.html" class="hover:text-blue-400">Experience</a>
+          <a href="publications.html" class="hover:text-blue-400">Publications</a>
+          <a href="projects.html" class="hover:text-blue-400">Projects</a>
+        </div>
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-800 shadow-md">
+        <a href="about.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+        <a href="experience.html" class="block px-4 py-2 hover:bg-gray-700">Experience</a>
+        <a href="publications.html" class="block px-4 py-2 hover:bg-gray-700">Publications</a>
+        <a href="projects.html" class="block px-4 py-2 hover:bg-gray-700">Projects</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <section class="pt-24 pb-16 max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-6 text-blue-400">Projects</h2>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-4 mb-8">
+          <button class="filter-btn bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" data-category="all">All</button>
+          <button class="filter-btn bg-gray-700 text-gray-300 px-4 py-2 rounded hover:bg-gray-600" data-category="algo">Algorithms & Optimization</button>
+          <button class="filter-btn bg-gray-700 text-gray-300 px-4 py-2 rounded hover:bg-gray-600" data-category="ml">ML / Data Analysis</button>
+          <button class="filter-btn bg-gray-700 text-gray-300 px-4 py-2 rounded hover:bg-gray-600" data-category="web">Web & Dashboards</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Web & Dashboards -->
+            <div class="project-card bg-gray-800 shadow-md rounded-lg p-6 web transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <h3 class="text-xl font-semibold mb-2">Nexora (Server Management Website) – 2025</h3>
+              <p class="text-gray-300 mb-2">
+                Developed a web application for managing servers in a lab, including server monitoring, user access control, and data logging.
+              </p>
+              <p class="text-gray-400"><strong>Tools:</strong> Python, SQLite, HTML, CSS, JavaScript</p>
+            </div>
+
+            <div class="project-card bg-gray-800 shadow-md rounded-lg p-6 web transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <h3 class="text-xl font-semibold mb-2">Hotel Management Dashboard – 2025</h3>
+              <p class="text-gray-300 mb-2">
+                Created a management dashboard for hotels to streamline bookings, track occupancy, and monitor daily operations.
+              </p>
+              <p class="text-gray-400"><strong>Tools:</strong> Python, SQLite, Flet</p>
+            </div>
+
+            <div class="project-card bg-gray-800 shadow-md rounded-lg p-6 web transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <h3 class="text-xl font-semibold mb-2">Local Odysees – Summer 2023</h3>
+              <p class="text-gray-300 mb-2">
+                Built a web tourist guide for the city of Patras, covering project planning, risk assessment, feasibility study, use cases, robustness diagrams, coding, and testing.
+              </p>
+              <p class="text-gray-400"><strong>Tools:</strong> PHP, JavaScript, HTML, CSS, MySQL, Leaflet, JSON</p>
+            </div>
+
+            <div class="project-card bg-gray-800 shadow-md rounded-lg p-6 web transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <h3 class="text-xl font-semibold mb-2">TVondemand – Winter 2021</h3>
+              <p class="text-gray-300 mb-2">
+                Designed and implemented a database system and created a graphical user interface for a movie and TV show rental application.
+              </p>
+              <p class="text-gray-400"><strong>Tools:</strong> Java, MySQL</p>
+            </div>
+
+
+            <!-- ML / Data Analysis -->
+            <div class="project-card bg-gray-800 shadow-md rounded-lg p-6 ml transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <h3 class="text-xl font-semibold mb-2">Object Detection – 2024</h3>
+            <p class="text-gray-300 mb-2">
+                Developed a machine learning model for vessel detection and recognition using advanced object detection frameworks.
+            </p>
+            <p class="text-gray-400"><strong>Tools:</strong> Python, YOLO, Torch</p>
+            </div>
+
+            <div class="project-card bg-gray-800 shadow-md rounded-lg p-6 ml transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <h3 class="text-xl font-semibold mb-2">End-to-end Environmental Sensing – Summer 2023</h3>
+            <p class="text-gray-300 mb-2">
+                Designed and implemented a wireless sensor network in a star topology to collect environmental data. Built a pipeline for storing and visualizing the data with Grafana, and applied statistical and machine learning models to predict future environmental attributes.
+            </p>
+            <p class="text-gray-400"><strong>Tools:</strong> Contiki OS, C, Grafana, MySQL, Python, Pandas, Keras, Jupyter</p>
+            </div>
+
+            <div class="project-card bg-gray-800 shadow-md rounded-lg p-6 ml transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <h3 class="text-xl font-semibold mb-2">Decentralized Query Processing in Apache Spark – Winter 2023</h3>
+            <p class="text-gray-300 mb-2">
+                Explored decentralized query processing and optimization techniques in Apache Spark, focusing on distributed data management and performance.
+            </p>
+            <p class="text-gray-400"><strong>Tools:</strong> Python, PySpark, Jupyter</p>
+            </div>
+
+            <!-- Algorithm & Optimization -->
+            <div class="project-card bg-gray-800 shadow-md rounded-lg p-6 algo transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <h3 class="text-xl font-semibold mb-2">Algorithm Engineering Project – Summer 2023</h3>
+            <p class="text-gray-300 mb-2">
+                Implemented and experimentally evaluated classical algorithms including Kruskal, Dijkstra, Bellman-Ford, A*, Preflow-Push, and Bipartite Preflow-Push using C++ with LEDA and BGL.
+            </p>        
+            <p class="text-gray-400"><strong>Tools:</strong> C++, LEDA, Boost</p>
+            </div>
+
+            <div class="project-card bg-gray-800 shadow-md rounded-lg p-6 algo transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <h3 class="text-xl font-semibold mb-2">Range & Similarity Queries – Winter 2023</h3>
+            <p class="text-gray-300 mb-2">
+                Implemented and evaluated multidimensional data structures such as k-d trees, Quad trees, Range Trees, and R-Trees. Extended the project with Locality Sensitive Hashing (LSH) for efficient similarity queries.
+            </p>
+            <p class="text-gray-400"><strong>Tools:</strong> Python, NumPy</p>
+            </div>
+
+            <div class="project-card bg-gray-800 shadow-md rounded-lg p-6 algo transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <h3 class="text-xl font-semibold mb-2">Lookup & Range Queries in DHTs – Winter 2023</h3>
+            <p class="text-gray-300 mb-2">
+                Implemented distributed hash tables (Chord and Pastry) and conducted experimental evaluation to analyze lookup and range query performance.
+            </p>
+            <p class="text-gray-400"><strong>Tools:</strong> Python, RabbitMQ Server</p>
+            </div>
+
+            <div class="project-card bg-gray-800 shadow-md rounded-lg p-6 algo transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <h3 class="text-xl font-semibold mb-2">Communication & Coordination Models – Winter 2023</h3>
+            <p class="text-gray-300 mb-2">
+                Designed and implemented different communication and coordination protocols for distributed systems, evaluating their performance and scalability.
+            </p>
+            <p class="text-gray-400"><strong>Tools:</strong> Python, RabbitMQ</p>
+            </div>
+
+            <div class="project-card bg-gray-800 shadow-md rounded-lg p-6 algo transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <h3 class="text-xl font-semibold mb-2">Nash Equilibria in Bimatrix Games – Summer 2023</h3>
+            <p class="text-gray-300 mb-2">
+                Studied algorithmic game theory by detecting pure Nash equilibria in bimatrix games and implementing algorithms for the computation of approximate equilibria. Conducted experimental evaluation of their performance.
+            </p>
+            <p class="text-gray-400"><strong>Tools:</strong> Python</p>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-700">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div class="flex flex-col md:flex-row gap-4 items-center mb-4 md:mb-0">
+          <a href="mailto:k_karathanasis@outlook.com" class="hover:text-blue-400">Email</a>
+          <a href="https://www.linkedin.com/in/kostis-karathanasis-ba9254330/" target="_blank" class="hover:text-blue-400">LinkedIn</a>
+          <!-- <a href="assets/karathanasis-cv.pdf" target="_blank" class="hover:text-blue-400">Download CV</a> -->
+        </div>
+        <div class="text-sm text-gray-500 text-center md:text-right">
+          &copy; 2025 K. Karathanasis
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
+
+

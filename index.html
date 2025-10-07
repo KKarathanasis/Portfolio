@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K. Karathanasis Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black font-sans text-gray-200 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-gray-900 shadow-md z-50 border-b border-gray-700">
+      <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <div class="text-2xl font-bold">
+          <a href="index.html" class="hover:text-blue-400">K. Karathanasis</a>
+        </div>
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-6">
+          <a href="about.html" class="hover:text-blue-400">About</a>
+          <a href="experience.html" class="hover:text-blue-400">Experience</a>
+          <a href="publications.html" class="hover:text-blue-400">Publications</a>
+          <a href="projects.html" class="hover:text-blue-400">Projects</a>
+        </div>
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-800 shadow-md">
+        <a href="about.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+        <a href="experience.html" class="block px-4 py-2 hover:bg-gray-700">Experience</a>
+        <a href="publications.html" class="block px-4 py-2 hover:bg-gray-700">Publications</a>
+        <a href="projects.html" class="block px-4 py-2 hover:bg-gray-700">Projects</a>
+      </div>
+    </nav>
+
+  <!-- Hero Section -->
+  <main class="flex-grow">
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <!-- Info Card -->
+        <div class="bg-gray-800 shadow-xl rounded-xl p-6 sm:p-10 w-full max-w-lg text-center border border-gray-700">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-3 text-white">Kostis Karathanasis</h1>
+
+            <!-- Main roles -->
+            <p class="text-xl sm:text-2xl text-blue-400 mb-2">Computer Engineer</p>
+            <p class="text-xl sm:text-2xl text-blue-300 mb-3">PhD Student</p>
+
+            <!-- Department & University -->
+            <p class="text-md sm:text-lg text-gray-300 mb-1">
+            <a href="https://www.ceid.upatras.gr/en/home/" target="_blank" class="hover:text-blue-400">
+                Department of Computer Engineering & Informatics
+            </a>
+            </p>
+            <p class="text-md sm:text-lg text-gray-300 mb-2">
+            <a href="https://www.upatras.gr/en/" target="_blank" class="hover:text-blue-400">
+                University of Patras
+            </a>
+            </p>
+        </div>
+
+        <!-- Scroll Indicator: Mouse -->
+        <div class="absolute bottom-10 flex justify-center">
+            <div class="w-6 h-10 border-2 border-gray-500 rounded-full flex justify-center">
+                <div class="w-1 h-2 bg-gray-400 rounded-full mt-2 animate-bounce"></div>
+            </div>
+        </div>
+
+        
+        <!-- Scroll Indicator -->
+        <!-- <div class="text-5xl absolute bottom-20 animate-bounce text-gray-400">
+        <a href="#highlights">↓</a>
+        </div> -->
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="max-w-8xl mx-auto py-20 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- About -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition">
+        <h2 class="text-2xl font-semibold mb-3 text-blue-400">About Me</h2>
+        <p class="text-gray-300 mb-4">Learn more about my background, education, and interests.</p>
+        <a href="about.html" class="text-blue-400 hover:underline">Read More →</a>
+        </div>
+
+        <!-- Experience -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition">
+        <h2 class="text-2xl font-semibold mb-3 text-blue-400">Experience</h2>
+        <p class="text-gray-300 mb-4">Explore my professional background, research, and teaching activities.</p>
+        <a href="experience.html" class="text-blue-400 hover:underline">Explore →</a>
+        </div>
+
+        <!-- Publications -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition">
+        <h2 class="text-2xl font-semibold mb-3 text-blue-400">Publications</h2>
+        <p class="text-gray-300 mb-4">Browse my academic papers and conference contributions.</p>
+        <a href="publications.html" class="text-blue-400 hover:underline">View Publications →</a>
+        </div>
+
+        <!-- Projects -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition">
+        <h2 class="text-2xl font-semibold mb-3 text-blue-400">Projects</h2>
+        <p class="text-gray-300 mb-4">Discover projects and collaborations I’ve been working on.</p>
+        <a href="projects.html" class="text-blue-400 hover:underline">View →</a>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-700">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div class="flex flex-col md:flex-row gap-4 items-center mb-4 md:mb-0">
+        <a href="mailto:k_karathanasis@outlook.com" class="hover:text-blue-400">Email</a>
+        <a href="https://www.linkedin.com/in/kostis-karathanasis-ba9254330/" target="_blank" class="hover:text-blue-400">LinkedIn</a>
+        <!-- <a href="assets/karathanasis-cv.pdf" target="_blank" class="hover:text-blue-400">Download CV</a> -->
+        </div>
+        <div class="text-sm text-gray-500 text-center md:text-right">
+        &copy; 2025 K. Karathanasis
+        </div>
+    </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

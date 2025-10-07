@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research - K. Karathanasis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 font-sans text-gray-200 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-gray-900 shadow-md z-50 border-b border-gray-700">
+      <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <div class="text-2xl font-bold">
+          <a href="index.html" class="hover:text-blue-400">K. Karathanasis</a>
+        </div>
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-6">
+          <a href="about.html" class="hover:text-blue-400">About</a>
+          <a href="experience.html" class="hover:text-blue-400">Experience</a>
+          <a href="publications.html" class="hover:text-blue-400">Publications</a>
+          <a href="projects.html" class="hover:text-blue-400">Projects</a>
+        </div>
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-800 shadow-md">
+        <a href="about.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+        <a href="experience.html" class="block px-4 py-2 hover:bg-gray-700">Experience</a>
+        <a href="publications.html" class="block px-4 py-2 hover:bg-gray-700">Publications</a>
+        <a href="projects.html" class="block px-4 py-2 hover:bg-gray-700">Projects</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <section class="pt-24 pb-16 max-w-6xl mx-auto px-4 space-y-12">
+
+            <!-- Research Experience -->
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-blue-400">Research</h2>
+                <div class="space-y-6">
+
+                <!-- ICELab -->
+                <div class="bg-gray-800 shadow-md rounded-lg p-6 hover:bg-gray-750 transition">
+                    <h3 class="text-xl font-semibold mb-2">Researcher at <a href="https://icelab.upatras.gr/" target="_blank" class="hover:text-blue-400">ICELab</a>, University of Patras</h3>
+                    <p class="text-gray-400 mb-1"><strong>Supervisors:</strong> Prof. Christos Zaroliagis, Prof. Spyros Kontogiannis</p>
+                    <p class="text-gray-400 mb-2"><strong>Duration:</strong> Mar 2024 – Present</p>
+                    <p class="text-gray-300">
+                    Topics: algorithm engineering, combinatorial optimization, multi-objective optimization, data structures, resource allocation, object detection with machine learning algorithms.
+                    </p>
+                </div>
+
+                <!-- AMBITIOUS Project -->
+                <div class="bg-gray-800 shadow-md rounded-lg p-6 hover:bg-gray-750 transition">
+                    <h3 class="text-xl font-semibold mb-2">Research Team Member – EU Project <a href="https://ambitious-project.eu/" target="_blank" class="hover:text-blue-400">AMBITIOUS</a></h3>
+                    <p class="text-gray-400 mb-1"><strong>Duration:</strong> Mar 2024 – Present</p>
+                    <p class="text-gray-300">
+                    Topics: Multi-objective optimization, vehicle routing, object detection, resource allocation.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Teaching -->
+            <div>
+              <h2 class="text-3xl font-bold mb-6 text-blue-400">Teaching</h2>
+              <table class="table-auto w-full text-left border-collapse border border-gray-700">
+                <tbody>
+                  <tr class="hover:bg-gray-800">
+                    <td class="px-4 py-2 border border-gray-700">2024-</td>
+                    <td class="px-4 py-2 border border-gray-700">Algorithm Engineering (CEID)</td>
+                    <td class="px-4 py-2 border border-gray-700">Lab lectures, exercises, grading</td>
+                  </tr>
+                  <tr class="hover:bg-gray-800">
+                    <td class="px-4 py-2 border border-gray-700">2024-</td>
+                    <td class="px-4 py-2 border border-gray-700">Algorithms and Optimization (CEID)</td>
+                    <td class="px-4 py-2 border border-gray-700">Grading assignments and exams</td>
+                  </tr>
+                  <tr class="hover:bg-gray-800">
+                    <td class="px-4 py-2 border border-gray-700">2024-</td>
+                    <td class="px-4 py-2 border border-gray-700">Introduction to Algorithms (CEID)</td>
+                    <td class="px-4 py-2 border border-gray-700">Grading exams</td>
+                  </tr>
+                  <tr class="hover:bg-gray-800">
+                    <td class="px-4 py-2 border border-gray-700">2025-</td>
+                    <td class="px-4 py-2 border border-gray-700">Algorithmic Techniques for Data Science (CEID)</td>
+                    <td class="px-4 py-2 border border-gray-700">Grading assignments</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-700">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div class="flex flex-col md:flex-row gap-4 items-center mb-4 md:mb-0">
+          <a href="mailto:k_karathanasis@outlook.com" class="hover:text-blue-400">Email</a>
+          <a href="https://www.linkedin.com/in/kostis-karathanasis-ba9254330/" target="_blank" class="hover:text-blue-400">LinkedIn</a>
+          <!-- <a href="assets/karathanasis-cv.pdf" target="_blank" class="hover:text-blue-400">Download CV</a> -->
+        </div>
+        <div class="text-sm text-gray-500 text-center md:text-right">
+          &copy; 2025 K. Karathanasis
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script for Mobile Menu -->
+    <script src="script.js"></script>
+</body>
+</html>
